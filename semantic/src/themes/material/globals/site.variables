@@ -6,9 +6,9 @@
        Fonts
 --------------------*/
 
-@headerFont        : 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@googleFontName    : 'Roboto';
+@headerFont        : 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontName    : 'Raleway';
 
 /*-------------------
       Base Sizes
@@ -91,11 +91,11 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @grey;
+@primaryColor        : @green;
+@secondaryColor      : @orange;
 
-@lightPrimaryColor   : @lightBlue;
-@lightSecondaryColor : @lightGrey;
+@lightPrimaryColor   : @lightGreen;
+@lightSecondaryColor : @lightOrange;
 
 /*-------------------
       Paragraph
