@@ -3,12 +3,26 @@
 
 ng new <app_name>
 
+* Create a new Component
+
+ng generate component <component-name>
+
 
 ### Angular's Repeater directive
 
 *ngFor
 
 ### Angular's Pipe
+
+## Binding
+
+### Property Binding
+
+https://angular.io/guide/template-syntax#property-binding--property-
+
+Set an element property to that of a component's property.
+Also, this Property Binding is a great way for a parent and child components to
+communicate.
 
 ### Event Binding
 https://angular.io/guide/template-syntax#event-binding
