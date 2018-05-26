@@ -7,10 +7,10 @@
 --------------------*/
 @borderRadius: @circularRadius;
 @textTransform: uppercase;
-@backgroundColor: #FFFFFF;
+@backgroundColor: @primaryColor;
 @backgroundImage: none;
 @fontWeight: bold;
-@textColor: rgba(0, 0, 0, 0.6);
+@textColor: @orange;
 @boxShadow:
   0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset
 ;
@@ -135,4 +135,3 @@
 @big: 1.25rem;
 @huge: 1.375rem;
 @massive: 1.5rem;
-

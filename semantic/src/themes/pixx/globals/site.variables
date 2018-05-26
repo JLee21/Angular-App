@@ -49,10 +49,15 @@
 
 /*-------------------
     Brand Colors
+    green = 33cc33
+    purple = 4d0080
+    orange = e76003
 --------------------*/
 
-@primaryColor        : @blue;
-@secondaryColor      : @black;
+
+@primaryColor        : #4d0080;
+@secondaryColor      : @lightBlack;
+@accentColor         : #e76003;
 
 @lightPrimaryColor   : @lightBlue;
 @lightSecondaryColor : @lightBlack;
@@ -221,7 +226,7 @@
 
 /*---  Colors  ---*/
 @red              : #DB2828;
-@orange           : #F2711C;
+@orange           : #e76003;
 @yellow           : #FBBD08;
 @olive            : #B5CC18;
 @green            : #21BA45;
@@ -466,7 +471,7 @@
       Borders
 --------------------*/
 
-@circularRadius                : 500rem;
+@circularRadius                : 300rem;
 
 @borderColor               : rgba(34, 36, 38, 0.15);
 @strongBorderColor         : rgba(34, 36, 38, 0.22);

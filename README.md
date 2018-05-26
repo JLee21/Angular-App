@@ -7,6 +7,10 @@ ng new <app_name>
 
 ng generate component <component-name>
 
+* Create a new Service
+
+ng generate service hero
+
 
 ### Angular's Repeater directive
 

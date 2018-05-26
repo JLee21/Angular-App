@@ -1,11 +1,18 @@
 <div *ngIf="hero">
-
-  <h2>{{ hero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </label>
+  <div class="ui container">
+    <div class="ui eight wide column">
+      <div class="ui raised segment centered">
+        <h2>{{ hero.name | uppercase }} Details</h2>
+        <div class="ui messsage">
+          <span>id: </span>{{hero.id}}
+        </div>
+        <div class="ui input">
+          <input [(ngModel)]="hero.name" placeholder="name">
+          <div class="ui left pointing label">
+            <h3>You can change your Hero!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
 </div>
