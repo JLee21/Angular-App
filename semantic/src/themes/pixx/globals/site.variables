@@ -43,7 +43,7 @@
    for explanation of @px variables
 */
 @relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @1px;
+@absoluteBorderRadius: @6px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -471,7 +471,7 @@
       Borders
 --------------------*/
 
-@circularRadius                : 300rem;
+@circularRadius                : 6px;
 
 @borderColor               : rgba(34, 36, 38, 0.15);
 @strongBorderColor         : rgba(34, 36, 38, 0.22);

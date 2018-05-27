@@ -23,9 +23,9 @@
 
 .ui.button {
   cursor: pointer;
-  display: inline-block;
+  display: block;
 
-  min-height: 1em;
+  min-height: 1.5em;
 
   outline: none;
   border: none;
@@ -35,8 +35,8 @@
 
   font-family: @fontFamily;
 
-  margin: 0em @horizontalMargin @verticalMargin 0em;
-  padding: @verticalPadding @horizontalPadding (@verticalPadding + @shadowOffset);
+  margin: 0.1em @horizontalMargin @verticalMargin 0em;
+  padding: 12px 10px;
 
   text-transform: @textTransform;
   text-shadow: @textShadow;
@@ -3142,7 +3142,7 @@
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
   background-color: @secondaryColorHover;
-  color: @orange;
+  // color: @orange;
   text-shadow: @secondaryTextShadow;
 }
 .ui.secondary.buttons .button:focus,

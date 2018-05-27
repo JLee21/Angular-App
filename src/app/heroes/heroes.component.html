@@ -2,7 +2,7 @@
 
   <ul class="heroes">
     <li *ngFor="let hero of heroes">
-      <div class="ui button tiny">
+      <div class="ui button huge">
         <a class="item" routerLink="/detail/{{hero.id}}">
           <span class="">{{hero.id}}</span> {{hero.name}}
         </a>
@@ -13,9 +13,8 @@
 </div>
 
 <div class="pusher">
-
   <!-- Here, we are using a one-way property binding.
-Now, when a the variable selectedHero changes from the section above,
-it gets sent to the component below.-->
+  Now, when a the variable selectedHero changes from the section above,
+  it gets sent to the component below.-->
   <app-hero-detail [hero]="selectedHero"></app-hero-detail>
 </div>

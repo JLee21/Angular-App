@@ -35,6 +35,11 @@ https://angular.io/guide/template-syntax#event-binding
 
 Add and remove CSS class conditionally with [class binding](https://angular.io/guide/template-syntax#class-binding).
 
+### In-memory Web API
+
+[github link](https://github.com/angular/in-memory-web-api)
+
+
 
 ### TypeScript
 

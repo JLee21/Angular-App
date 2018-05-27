@@ -1,4 +1,4 @@
-<div class="ui header huge">{{title}}!</div>
+<h1 class="ui header">{{title}}!</h1>
 <!--
 // The RouterOutlet is one of the router
 // directives that became available to the
@@ -6,11 +6,19 @@
 // AppRoutingModule which exported RouterModule.
 -->
 <div class="ui grid">
-  <div class="four wide column">
+  <div class="eight wide column">
     <div class="ui top attached tabular menu">
       <!-- <nav> -->
-        <a class="item" routerLink="/dashboard">Dashboard</a>
-        <a class="item" routerLink="/heroes">Heroes</a>
+        <a class="item" routerLink="/dashboard">
+          <div class="ui header huge">
+            Details
+          </div>
+        </a>
+        <a class="item" routerLink="/heroes">
+          <div class="ui header huge">
+            Heroes
+          </div>
+        </a>
       <!-- </nav> -->
     </div>
   </div>

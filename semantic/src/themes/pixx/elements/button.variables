@@ -5,19 +5,19 @@
 /*-------------------
        Element
 --------------------*/
-@borderRadius: @circularRadius;
+@borderRadius: 0em;
 @textTransform: uppercase;
 @backgroundColor: @primaryColor;
 @backgroundImage: none;
-@fontWeight: bold;
+@fontWeight: normal;
 @textColor: @orange;
 @boxShadow:
   0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset
 ;
 
 /* Padding */
-@verticalPadding: 1.25em;
-@horizontalPadding: 3em;
+@verticalPadding: 12px;
+@horizontalPadding: 6px;
 
 /* Icon */
 @iconOpacity: 0.8;
