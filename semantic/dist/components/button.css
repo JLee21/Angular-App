@@ -3405,7 +3405,7 @@
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
   background-color: #616161;
-  color: #FFFFFF;
+  color: #e76003;
   text-shadow: none;
 }
 .ui.secondary.buttons .button:focus,

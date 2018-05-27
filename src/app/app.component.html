@@ -1,3 +1,25 @@
-<h1>{{title}}</h1>
-<app-heroes></app-heroes>
-<app-messages></app-messages>
+<div class="ui header huge">{{title}}!</div>
+<!--
+// The RouterOutlet is one of the router
+// directives that became available to the
+// AppComponent because AppModule imports
+// AppRoutingModule which exported RouterModule.
+-->
+<div class="ui grid">
+  <div class="four wide column">
+    <div class="ui top attached tabular menu">
+      <!-- <nav> -->
+        <a class="item" routerLink="/dashboard">Dashboard</a>
+        <a class="item" routerLink="/heroes">Heroes</a>
+      <!-- </nav> -->
+    </div>
+  </div>
+  <div class="ui bottom attached segment">
+    <div class="ui segment">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="ui segment">
+      <app-messages></app-messages>
+    </div>
+  </div>
+</div>
