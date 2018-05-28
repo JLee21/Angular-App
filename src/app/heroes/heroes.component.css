@@ -1,3 +1,20 @@
+.ui.button {
+  display: inline-grid;
+}
+
+.ui.buttons .button:last-child {
+  margin-left: inherit;
+  width: auto;
+  text-align: center;
+}
+
+.ui.menu .item {
+  padding: 0.2em 0.1em;
+  width: 7em;
+  text-align: left;
+
+}
+
 /* HeroesComponent's private CSS styles */
 .selected {
   background-color: #CFD8DC !important;
@@ -27,7 +44,7 @@
 .heroes li:hover {
   color: black;
   /* background-color: #DDD; */
-  left: .1em;
+  /* left: .1em; */
 }
 .heroes .text {
   position: relative;

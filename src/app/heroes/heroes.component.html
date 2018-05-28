@@ -1,17 +1,29 @@
 <div class="ui sidebar inverted right vertical menu visible fixed">
-
   <ul class="heroes">
     <li *ngFor="let hero of heroes">
-      <div class="ui button huge">
-        <a class="item" routerLink="/detail/{{hero.id}}">
-          <span class="">{{hero.id}}</span> {{hero.name}}
-        </a>
+      <div class="ui buttons">
+        <button class="ui button huge">
+          <a class="item" routerLink="/detail/{{hero.id}}">
+            <span class="">{{hero.id}}</span> {{hero.name}}
+          </a>
+        </button>
+        <!-- <div class="or"></div> -->
+        <button class="ui button" >
+          <i class="times circle icon large" (click)="delete(hero)"></i>
+        </button>
       </div>
     </li>
   </ul>
-
 </div>
-
+<div>
+  <div class="ui input large">
+    <input #heroName placeholder="Name">
+  </div>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <div class="ui primary button huge" (click)="add(heroName.value); heroName.value=''">
+    add
+  </div>
+</div>
 <div class="pusher">
   <!-- Here, we are using a one-way property binding.
   Now, when a the variable selectedHero changes from the section above,
