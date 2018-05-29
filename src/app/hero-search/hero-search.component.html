@@ -1,0 +1,36 @@
+<div class="right menu">
+  <div class="item">
+    <div class="ui transparent icon input huge">
+      <!-- The $ is a convention that indicates heroes$ is an Observable,
+      not an array. The *ngFor can't do anything with an Observable.
+      But there's also a pipe character (|) followed by async, which identifies
+      Angular's AsyncPipe.
+      The AsyncPipe subscribes to an Observable automatically so you won't have
+      to do so in the component class. -->
+      <!-- Every time the user types in the textbox, the binding calls search()
+      with the textbox value, a "search term". The searchTerms becomes an
+      Observable emitting a steady stream of search terms. -->
+      <input #searchBox id="search-box"
+             (keyup)="search(searchBox.value)"
+             placeholder="Search Heroes"/>
+      <i class="search link icon"></i>
+      <ul class="search-result">
+        <li *ngFor="let hero of heroes$ | async" >
+          <a routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- O R I G I N A L -->
+<!-- <div class="right menu">
+  <div class="item">
+    <div class="ui transparent icon input">
+      <input type="text" placeholder="Search Heroes">
+      <i class="search link icon"></i>
+    </div>
+  </div>
+</div> -->
